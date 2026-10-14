@@ -15,8 +15,11 @@ class OrderBook:
         self.order = order
         if order.side == "BUY":
             self.add_buyorder.append(order)
+            self.add_buyorder.sort(key= lambda order: order.price, reverse=True )
         elif order.side == "SELL":
             self.add_sellorder.append(order)
+            self.add_sellorder.sort(key=lambda order: order.price)
+
 
 book = OrderBook()
 order1 = Order("APPL", "BUY", 323, 10)
@@ -29,8 +32,4 @@ book.get_order(order3)
 book.get_order(order4)
 print(len(book.add_buyorder))
 print(len(book.add_sellorder))
-#print(order1)
-#print(order1.symbol)
-#print(order1.side)
-#print(order1.price)
-#print(order1.quantity)
+print(book.add_buyorder)
