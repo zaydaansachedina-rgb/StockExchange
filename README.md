@@ -18,8 +18,8 @@ The current learning milestone is organizing orders by price priority.
 | --- | --- | --- |
 | `Order` model | Complete | Stores core order information such as symbol, side, price, and quantity. |
 | Basic `OrderBook` | Complete | Accepts orders and separates buy orders from sell orders. |
-| Price-priority sorting | In progress | Buy orders should be highest-to-lowest; sell orders should be lowest-to-highest. |
-| Best bid, best ask, and spread | Planned next | Read the best available prices from the sorted book. |
+| Price-priority sorting | Complete | Buy orders should be highest-to-lowest; sell orders should be lowest-to-highest. |
+| Best bid, best ask, and spread | In Progress | Read the best available prices from the sorted book. |
 | Matching engine | Planned | Match compatible buy and sell orders and support partial fills. |
 | Automated tests | Planned | Cover expected behavior, invalid data, and edge cases with `pytest`. |
 
